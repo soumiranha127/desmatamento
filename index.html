@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto do Desmatamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para ícones -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Impacto do Desmatamento</h1>
+            <nav>
+                <ul>
+                    <li><a href="#problemas">Os Problemas</a></li>
+                    <li><a href="#consequencias">Consequências</a></li>
+                    <li><a href="#conclusao">Conclusão</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de introdução com efeito parallax -->
+    <section id="intro" class="parallax">
+        <div class="intro-content">
+            <h2>O impacto do desmatamento no meio ambiente</h2>
+            <p>Descubra como a destruição das florestas afeta nosso planeta e nossas vidas, criando um ciclo vicioso que prejudica o equilíbrio ecológico, social e econômico.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Seção de problemas -->
+        <section id="problemas" class="section">
+            <h2>Os Problemas</h2>
+            <div class="problema-item">
+                <h3>Aumento das enchentes</h3>
+                <p>As árvores desempenham um papel fundamental no ciclo da água. Elas absorvem a água da chuva e ajudam na infiltração no solo, reduzindo o risco de inundações. Sem a presença de vegetação, a água não é absorvida, mas escorre rapidamente para os rios, aumentando o volume das águas e o risco de enchentes. Esse fenômeno causa destruição de infraestruturas e ameaça a vida de milhões de pessoas, especialmente em áreas urbanas próximas a rios e córregos.</p>
+            </div>
+            <div class="problema-item">
+                <h3>Calor excessivo e ilhas de calor</h3>
+                <p>O desmatamento contribui para a elevação das temperaturas nas cidades e regiões desmatadas. As árvores e plantas ajudam a resfriar o ambiente através da evapotranspiração, um processo no qual a água das plantas se evapora para a atmosfera. Sem essas árvores, o calor se intensifica e forma as chamadas “ilhas de calor”, onde as temperaturas são consideravelmente mais altas do que nas áreas ao redor. Essas condições não só afetam o conforto térmico da população, mas também agravam problemas respiratórios e cardiovasculares, além de sobrecarregar os sistemas de saúde pública.</p>
+            </div>
+            <div class="problema-item">
+                <h3>Redução da biodiversidade</h3>
+                <p>A destruição das florestas e outros ecossistemas naturais afeta diretamente a biodiversidade. A floresta é o lar de milhares de espécies de plantas, animais e microorganismos. Quando o desmatamento ocorre, muitas dessas espécies perdem seus habitats, o que pode levar à extinção de várias delas. A perda da biodiversidade reduz a capacidade do planeta de se regenerar e diminui os recursos naturais disponíveis para a humanidade, como alimentos, medicamentos e matérias-primas essenciais.</p>
+            </div>
+        </section>
+
+        <!-- Seção de consequências com cards interativos -->
+        <section id="consequencias" class="section">
+            <h2>Consequências</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Aumento das enchentes</h3>
+                    <p>As florestas ajudam a regular o fluxo da água, mas com o desmatamento, o solo perde sua capacidade de absorção, causando o escoamento rápido da água. Isso resulta em enchentes mais intensas, afetando especialmente as regiões ribeirinhas. Além disso, o assoreamento dos rios, que é o acúmulo de sedimentos causados pelo desmatamento, prejudica a navegação e aumenta os custos com infraestrutura.</p>
+                </div>
+                <div class="card">
+                    <h3>Perda de biodiversidade</h3>
+                    <p>As florestas tropicais, por exemplo, abrigam mais de 50% da biodiversidade mundial. Quando essas áreas são destruídas, perdemos uma enorme quantidade de espécies que nunca sequer foram estudadas. Esse desaparecimento não só afeta os ecossistemas naturais, mas também compromete as cadeias alimentares e prejudica o fornecimento de recursos essenciais para a vida humana, como oxigênio, alimentos e produtos farmacêuticos.</p>
+                </div>
+                <div class="card">
+                    <h3>Impactos econômicos</h3>
+                    <p>O desmatamento prejudica diretamente a economia local e global. As comunidades que dependem das florestas para seu sustento, como as populações indígenas e as que vivem da extração de produtos florestais sustentáveis, enfrentam perdas significativas. Além disso, os custos com desastres naturais, como enchentes e secas, aumentam, sobrecarregando os governos e os sistemas de saúde. A destruição das florestas também impacta o turismo ecológico, um setor econômico importante em muitos países.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de vídeo com animação de fade-in -->
+        <section id="conclusao" class="section fade-in">
+            <h2>Conclusão</h2>
+            <p>O desmatamento é um dos maiores desafios que o planeta enfrenta atualmente. Para preservar o meio ambiente e garantir um futuro sustentável, é necessário adotar práticas de reflorestamento, proteger as áreas de vegetação nativa e promover o uso consciente dos recursos naturais. Além disso, a educação ambiental é essencial para mudar o comportamento das pessoas e fortalecer políticas públicas que visem a conservação ambiental.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ILh7nDEKGqc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato" class="section">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" action="submit_form.php" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>2025 | @femascheti</p>
+            <a href="https://www.linkedin.com/in/femascheti" class="cta-footer">Junte-se à nossa causa!</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Scripts JS -->
+</body>
+</html>
